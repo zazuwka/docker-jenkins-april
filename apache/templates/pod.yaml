@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: {{ .Values.podname }}
+  labels:
+    team: kaizen
+spec:
+  containers:
+  - name: hello-world
+    image: {{ .Values.repository.image }}:{{ .Values.repository.tag }}
