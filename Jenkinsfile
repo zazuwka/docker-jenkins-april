@@ -22,6 +22,7 @@ spec:
      
     '''
 
+
 podTemplate(cloud: 'kubernetes', label: 'docker', yaml: template) {
     node("docker") {
         container("docker") {
