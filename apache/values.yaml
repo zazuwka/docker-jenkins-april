@@ -1,9 +1,9 @@
-podname: hello
+podname: hello-world
 repository:
   image: "zazuwka/hello-world"
   tag: "1.0"
 service:
-  name: hello
+  name: hello-world
   port: 80
   targetport: 80
   type: LoadBalancer
