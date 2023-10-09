@@ -39,6 +39,7 @@ stage("Checkout SCM") {
     docker login -u ${DOCKER_USER} -p ${DOCKER_PASS}
     docker push ${DOCKER_USER}/hello-world:1.0
     """
+        build 'kubernetes'
 }
 }   
 }
